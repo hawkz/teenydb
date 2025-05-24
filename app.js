@@ -329,26 +329,6 @@ function showNextTeenyping() {
     updateCounter();
 }
 
-function showPreviousTeenyping() {
-    if (filteredTeenypings.length === 0) return;
-    currentTeenypingIndex--;
-    if (currentTeenypingIndex < 0) {
-        currentTeenypingIndex = filteredTeenypings.length - 1;
-    }
-    updateCounter();
-    highlightCurrentCard();
-}
-
-function showNextTeenyping() {
-    if (filteredTeenypings.length === 0) return;
-    currentTeenypingIndex++;
-    if (currentTeenypingIndex >= filteredTeenypings.length) {
-        currentTeenypingIndex = 0;
-    }
-    updateCounter();
-    highlightCurrentCard();
-}
-
 // Update the counter display
 function updateCounter() {
     currentCount.textContent = filteredTeenypings.length > 0 ? currentTeenypingIndex + 1 : 0;
