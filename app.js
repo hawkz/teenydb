@@ -312,7 +312,6 @@ function showPreviousTeenyping() {
         currentTeenypingIndex = filteredTeenypings.length - 1;
     }
     
-    showTeenypingDetails(filteredTeenypings[currentTeenypingIndex]);
     updateCounter();
 }
 
@@ -324,8 +323,7 @@ function showNextTeenyping() {
     if (currentTeenypingIndex >= filteredTeenypings.length) {
         currentTeenypingIndex = 0;
     }
-    
-    showTeenypingDetails(filteredTeenypings[currentTeenypingIndex]);
+
     updateCounter();
 }
 
